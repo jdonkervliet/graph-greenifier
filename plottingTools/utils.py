@@ -64,12 +64,8 @@ def plotWaitTimesHist(df_server, label):
 
 
 def get_task_info(df_host, df_service, df_server, task_name):
-    print(f"{task_name = }")
-
     # Get their starting time
     df_server_task = df_server[df_server.server_name == task_name]
-
-    print(f"{df_server_task = }")
 
     # filter to when the task has a host
     df_server_task_with_host = df_server_task[df_server_task.host_id.notnull()]
@@ -77,7 +73,6 @@ def get_task_info(df_host, df_service, df_server, task_name):
     # Get the row with the first timestamp
     first_row = df_server_task_with_host[df_server_task_with_host.timestamp == df_server_task_with_host.timestamp.min()]
 
-    print(f"{first_row = }")
     # Get host the task is run on
     host_id = first_row["host_id"].item()
     host_name = df_host[df_host.host_id == host_id]["host_name"].iloc[0]
@@ -102,11 +97,11 @@ def get_output(df_host, df_service, df_server, save=False, exportName=""):
         output["BGOs"][task_name] = get_task_info(df_host, df_service, df_server, task_name)
 
 
-    output["total_runtime"] = df_service["timestamp"].max()
+    output["Total runtime"] = f' {df_service["timestamp"].max() / 1000 /60/60:.2f} Hours'
 
-    output["total_energy"] = (df_host["energy_usage"].sum() / 3_600_000).round(2)
+    output["Energy usage"] = f'{(df_host["energy_usage"].sum() / 3_600_000).round(2)} kWh'
 
-    output["total_carbon"] = (df_host["carbon_emission"].sum() / 1000).round(2)
+    output["Carbon emission"] = f'{(df_host["carbon_emission"].sum() / 1000).round(2)} kg'
 
     if save:
         import json 
