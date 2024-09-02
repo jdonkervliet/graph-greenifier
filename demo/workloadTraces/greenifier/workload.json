@@ -1,0 +1,86 @@
+{
+    "tasks": [
+        {
+            "cpuCount": 1,
+            "cpuUsage": 33450,
+            "dependencies": [],
+            "energyConsumption": {
+                "H01": 13691100,
+                "H02": 15241320,
+                "H03": 25831980
+            },
+            "id": 0,
+            "memCapacity": 1000000,
+            "name": "bc",
+            "runTimes": {
+                "H01": 54764400,
+                "H02": 60965290,
+                "H03": 103327920
+            },
+            "submissionTime": "2022-08-05"
+        },
+        {
+            "cpuCount": 1,
+            "cpuUsage": 73203,
+            "dependencies": [
+                0
+            ],
+            "energyConsumption": {
+                "H01": 216610,
+                "H02": 234020,
+                "H03": 415810
+            },
+            "id": 1,
+            "memCapacity": 1000000,
+            "name": "find_max",
+            "runTimes": {
+                "H01": 8664500,
+                "H02": 9361100,
+                "H03": 16632600
+            },
+            "submissionTime": "2022-08-05"
+        },
+        {
+            "cpuCount": 1,
+            "cpuUsage": 23564,
+            "dependencies": [
+                1
+            ],
+            "energyConsumption": {
+                "H01": 4520,
+                "H02": 4800,
+                "H03": 8760
+            },
+            "id": 2,
+            "memCapacity": 1000000,
+            "name": "bfs",
+            "runTimes": {
+                "H01": 180900,
+                "H02": 192300,
+                "H03": 350600
+            },
+            "submissionTime": "2022-08-05"
+        },
+        {
+            "cpuCount": 1,
+            "cpuUsage": 12423,
+            "dependencies": [
+                2
+            ],
+            "energyConsumption": {
+                "H01": 243060,
+                "H02": 459680,
+                "H03": 269510
+            },
+            "id": 3,
+            "memCapacity": 1000000,
+            "name": "find_path",
+            "runTimes": {
+                "H01": 972250,
+                "H02": 1838720,
+                "H03": 1078040
+            },
+            "submissionTime": "2022-08-05"
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "name": "greenifier",
+    "topologies": [
+        {
+            "pathToFile": "topologies/greenifier_topology.json"
+        }
+    ],
+    "workloads": [
+        {
+            "pathToFile": "workloadTraces/greenifier",
+            "type": "Greenifier"
+        }
+    ],
+    "allocationPolicies": [
+        {
+            "policyType": "Mem"
+        },
+        {
+            "policyType": "MemInv"
+        }
+    ],
+    "carbonTracePaths": ["carbonTraces/carbon_2022.parquet"],
+    "exportModels": [
+        {
+            "exportInterval": 60
+        }
+    ]
+}

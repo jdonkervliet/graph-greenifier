@@ -4,7 +4,7 @@
 **DESCRIPTION PARAGRAPHS**
 
 ### Architecture Diagram
-![architecture](greenifier.png)
+![architecture](greenifier-white.png)
 
 **DIAGRAM EXPLANATION**
 
