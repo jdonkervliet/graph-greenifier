@@ -9,7 +9,7 @@
                     "name": "H01",
                     "cpu":
                     {
-                        "coreCount": 4,
+                        "coreCount": 16,
                         "coreSpeed": "3300 Mhz"
                     },
                     "memory": {

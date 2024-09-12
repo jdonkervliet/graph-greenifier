@@ -19,10 +19,5 @@
             "policyType": "MemInv"
         }
     ],
-    "carbonTracePaths": ["carbonTraces/carbon_2022.parquet"],
-    "exportModels": [
-        {
-            "exportInterval": 60
-        }
-    ]
+    "carbonTracePaths": ["carbonTraces/carbon_2022.parquet"]
 }
