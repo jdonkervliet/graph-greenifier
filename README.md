@@ -39,3 +39,4 @@ To properly use Graph-Greenifier, the following things have to be installed:
 - **Python** (version >= 3.8)
 - **pip** 
 - See the python packages required [here](requirements.txt)
+
