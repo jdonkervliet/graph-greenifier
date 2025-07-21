@@ -1,0 +1,26 @@
+{
+    "name": "greenifier",
+    "topologies": [
+        {
+            "pathToFile": "topologies/topology.json"
+        }
+    ],
+    "workloads": [
+        {
+            "pathToFile": "workloadTraces/greenifier",
+            "type": "GreenifierWorkload"
+        }
+    ],
+    "exportModels": [
+        {
+            "exportInterval": 1,
+            "printFrequency": 168,
+            "filesToExport": [
+                "host",
+                "powerSource",
+                "service",
+                "task"
+            ]
+        }
+    ]
+}

@@ -1,86 +1,268 @@
 {
-    "tasks": [
-        {
-            "cpuCount": 1,
-            "cpuUsage": 33450,
-            "dependencies": [],
-            "energyConsumption": {
-                "H01": 136911000,
-                "H02": 152413200,
-                "H03": 258319800
-            },
-            "id": 0,
-            "memCapacity": 1000000,
-            "name": "bc",
-            "runTimes": {
-                "H01": 547644000,
-                "H02": 609652900,
-                "H03": 1033279200
-            },
-            "submissionTime": "2022-08-05"
-        },
-        {
-            "cpuCount": 1,
-            "cpuUsage": 73203,
-            "dependencies": [
-                0
-            ],
-            "energyConsumption": {
-                "H01": 2166100,
-                "H02": 2340200,
-                "H03": 4158100
-            },
-            "id": 1,
-            "memCapacity": 1000000,
-            "name": "find_max",
-            "runTimes": {
-                "H01": 86645000,
-                "H02": 93611000,
-                "H03": 166326000
-            },
-            "submissionTime": "2022-08-05"
-        },
-        {
-            "cpuCount": 1,
-            "cpuUsage": 23564,
-            "dependencies": [
-                1
-            ],
-            "energyConsumption": {
-                "H01": 45200,
-                "H02": 48000,
-                "H03": 87600
-            },
-            "id": 2,
-            "memCapacity": 1000000,
-            "name": "bfs",
-            "runTimes": {
-                "H01": 1809000,
-                "H02": 1923000,
-                "H03": 3506000
-            },
-            "submissionTime": "2022-08-05"
-        },
-        {
-            "cpuCount": 1,
-            "cpuUsage": 12423,
-            "dependencies": [
-                2
-            ],
-            "energyConsumption": {
-                "H01": 2430600,
-                "H02": 4596800,
-                "H03": 2695100
-            },
-            "id": 3,
-            "memCapacity": 1000000,
-            "name": "find_path",
-            "runTimes": {
-                "H01": 9722500,
-                "H02": 18387200,
-                "H03": 10780400
-            },
-            "submissionTime": "2022-08-05"
-        }
-    ]
+  "tasks": [
+    {
+      "cpuCount": 1,
+      "cpuUsage": 10000,
+      "dependencies": [],
+      "energyConsumption": { "H01": 16692242 },
+      "id": 0,
+      "memCapacity": 1000000,
+      "name": "pr",
+      "runTimes": { "H01": 320 },
+      "submissionTime": "2025-06-20"
+    },
+    {
+      "cpuCount": 1,
+      "cpuUsage": 10000,
+      "dependencies": [0],
+      "energyConsumption": { "H01": 126101 },
+      "id": 1,
+      "memCapacity": 1000000,
+      "name": "find_max",
+      "runTimes": { "H01": 2 },
+      "submissionTime": "2025-06-20"
+    },
+    {
+      "cpuCount": 1,
+      "cpuUsage": 10000,
+      "dependencies": [0],
+      "energyConsumption": { "H01": 1236783 },
+      "id": 2,
+      "memCapacity": 1000000,
+      "name": "bfs",
+      "runTimes": { "H01": 29 },
+      "submissionTime": "2025-06-20"
+    },
+    {
+      "cpuCount": 1,
+      "cpuUsage": 10000,
+      "dependencies": [1, 2],
+      "energyConsumption": { "H01": 373 },
+      "id": 3,
+      "memCapacity": 1000000,
+      "name": "find_path",
+      "runTimes": { "H01": 0 },
+      "submissionTime": "2025-06-20"
+    },
+    {
+      "cpuCount": 1,
+      "cpuUsage": 10000,
+      "dependencies": [],
+      "energyConsumption": { "H01": 5259110 },
+      "id": 4,
+      "memCapacity": 1000000,
+      "name": "pr",
+      "runTimes": { "H01": 113 },
+      "submissionTime": "2025-06-20"
+    },
+    {
+      "cpuCount": 1,
+      "cpuUsage": 10000,
+      "dependencies": [4],
+      "energyConsumption": { "H01": 135364 },
+      "id": 5,
+      "memCapacity": 1000000,
+      "name": "find_max",
+      "runTimes": { "H01": 3 },
+      "submissionTime": "2025-06-20"
+    },
+    {
+      "cpuCount": 1,
+      "cpuUsage": 10000,
+      "dependencies": [4],
+      "energyConsumption": { "H01": 1492958 },
+      "id": 6,
+      "memCapacity": 1000000,
+      "name": "bfs",
+      "runTimes": { "H01": 34 },
+      "submissionTime": "2025-06-20"
+    },
+    {
+      "cpuCount": 1,
+      "cpuUsage": 10000,
+      "dependencies": [5, 6],
+      "energyConsumption": { "H01": 0 },
+      "id": 7,
+      "memCapacity": 1000000,
+      "name": "find_path",
+      "runTimes": { "H01": 0 },
+      "submissionTime": "2025-06-20"
+    },
+    {
+      "cpuCount": 1,
+      "cpuUsage": 10000,
+      "dependencies": [],
+      "energyConsumption": { "H01": 25354127 },
+      "id": 8,
+      "memCapacity": 1000000,
+      "name": "pr",
+      "runTimes": { "H01": 500 },
+      "submissionTime": "2025-06-20"
+    },
+    {
+      "cpuCount": 1,
+      "cpuUsage": 10000,
+      "dependencies": [8],
+      "energyConsumption": { "H01": 559593 },
+      "id": 9,
+      "memCapacity": 1000000,
+      "name": "find_max",
+      "runTimes": { "H01": 17 },
+      "submissionTime": "2025-06-20"
+    },
+    {
+      "cpuCount": 1,
+      "cpuUsage": 10000,
+      "dependencies": [8],
+      "energyConsumption": { "H01": 3630696 },
+      "id": 10,
+      "memCapacity": 1000000,
+      "name": "bfs",
+      "runTimes": { "H01": 80 },
+      "submissionTime": "2025-06-20"
+    },
+    {
+      "cpuCount": 1,
+      "cpuUsage": 10000,
+      "dependencies": [9, 10],
+      "energyConsumption": { "H01": 14565 },
+      "id": 11,
+      "memCapacity": 1000000,
+      "name": "find_path",
+      "runTimes": { "H01": 0 },
+      "submissionTime": "2025-06-20"
+    },
+    {
+      "cpuCount": 1,
+      "cpuUsage": 10000,
+      "dependencies": [],
+      "energyConsumption": { "H01": 18187982 },
+      "id": 12,
+      "memCapacity": 1000000,
+      "name": "pr",
+      "runTimes": { "H01": 338 },
+      "submissionTime": "2025-06-20"
+    },
+    {
+      "cpuCount": 1,
+      "cpuUsage": 10000,
+      "dependencies": [12],
+      "energyConsumption": { "H01": 172966 },
+      "id": 13,
+      "memCapacity": 1000000,
+      "name": "find_max",
+      "runTimes": { "H01": 3 },
+      "submissionTime": "2025-06-20"
+    },
+    {
+      "cpuCount": 1,
+      "cpuUsage": 10000,
+      "dependencies": [12],
+      "energyConsumption": { "H01": 1181565 },
+      "id": 14,
+      "memCapacity": 1000000,
+      "name": "bfs",
+      "runTimes": { "H01": 28 },
+      "submissionTime": "2025-06-20"
+    },
+    {
+      "cpuCount": 1,
+      "cpuUsage": 10000,
+      "dependencies": [13, 14],
+      "energyConsumption": { "H01": 5721 },
+      "id": 15,
+      "memCapacity": 1000000,
+      "name": "find_path",
+      "runTimes": { "H01": 0 },
+      "submissionTime": "2025-06-20"
+    },
+    {
+      "cpuCount": 1,
+      "cpuUsage": 10000,
+      "dependencies": [],
+      "energyConsumption": { "H01": 51389893 },
+      "id": 16,
+      "memCapacity": 1000000,
+      "name": "pr",
+      "runTimes": { "H01": 1030 },
+      "submissionTime": "2025-06-20"
+    },
+    {
+      "cpuCount": 1,
+      "cpuUsage": 10000,
+      "dependencies": [16],
+      "energyConsumption": { "H01": 841294 },
+      "id": 17,
+      "memCapacity": 1000000,
+      "name": "find_max",
+      "runTimes": { "H01": 25 },
+      "submissionTime": "2025-06-20"
+    },
+    {
+      "cpuCount": 1,
+      "cpuUsage": 10000,
+      "dependencies": [16],
+      "energyConsumption": { "H01": 6410778 },
+      "id": 18,
+      "memCapacity": 1000000,
+      "name": "bfs",
+      "runTimes": { "H01": 142 },
+      "submissionTime": "2025-06-20"
+    },
+    {
+      "cpuCount": 1,
+      "cpuUsage": 10000,
+      "dependencies": [17, 18],
+      "energyConsumption": { "H01": 25998 },
+      "id": 19,
+      "memCapacity": 1000000,
+      "name": "find_path",
+      "runTimes": { "H01": 0 },
+      "submissionTime": "2025-06-20"
+    },
+    {
+      "cpuCount": 1,
+      "cpuUsage": 10000,
+      "dependencies": [],
+      "energyConsumption": { "H01": 18581366 },
+      "id": 20,
+      "memCapacity": 1000000,
+      "name": "pr",
+      "runTimes": { "H01": 340 },
+      "submissionTime": "2025-06-20"
+    },
+    {
+      "cpuCount": 1,
+      "cpuUsage": 10000,
+      "dependencies": [20],
+      "energyConsumption": { "H01": 487244 },
+      "id": 21,
+      "memCapacity": 1000000,
+      "name": "find_max",
+      "runTimes": { "H01": 12 },
+      "submissionTime": "2025-06-20"
+    },
+    {
+      "cpuCount": 1,
+      "cpuUsage": 10000,
+      "dependencies": [20],
+      "energyConsumption": { "H01": 3570245 },
+      "id": 22,
+      "memCapacity": 1000000,
+      "name": "bfs",
+      "runTimes": { "H01": 83 },
+      "submissionTime": "2025-06-20"
+    },
+    {
+      "cpuCount": 1,
+      "cpuUsage": 10000,
+      "dependencies": [21, 22],
+      "energyConsumption": { "H01": 5489 },
+      "id": 23,
+      "memCapacity": 1000000,
+      "name": "find_path",
+      "runTimes": { "H01": 0 },
+      "submissionTime": "2025-06-20"
+    }
+  ]
 }
