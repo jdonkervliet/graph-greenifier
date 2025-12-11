@@ -45,4 +45,4 @@ To run Graph-Greenifier as a stand-alone tool, open the [demo](demo/demo.ipynb).
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE-Greenifier.txt) file for details.
+This project is licensed under the Apache 2.0 License. See the [LICENSE](LICENSE-Greenifier.txt) file for details.
